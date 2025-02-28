@@ -1,0 +1,24 @@
+.alinear {
+  display: flex;
+}
+
+.dropdown{
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 769px) {
+  .alinear {
+    display: block;
+  }
+  .dropdown{
+    margin-left: 0%;
+  }
+}
+
+.Botones-prompt i {
+  margin: 10px 1px;
+  padding: 10px 13px;
+  border: 0.3px solid #dad8d8;
+  border-radius: 3px;
+  color: black;
+}

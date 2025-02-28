@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.dropdown{
+.dropdown {
   margin-left: 3%;
 }
 
@@ -10,7 +10,7 @@
   .alinear {
     display: block;
   }
-  .dropdown{
+  .dropdown {
     margin-left: 0%;
   }
 }
@@ -21,4 +21,27 @@
   border: 0.3px solid #dad8d8;
   border-radius: 3px;
   color: black;
+}
+
+.boton {
+  text-align: center;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  padding: 0px 30rem;
+}
+
+#cambiaVista {
+  display: none;
+}
+
+#cambiaVista:checked ~ contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
 }

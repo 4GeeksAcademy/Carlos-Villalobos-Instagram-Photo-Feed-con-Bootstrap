@@ -9,7 +9,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -27,141 +27,295 @@
     <title>01 Add Bootstrap To Your Website</title>
     <title>Document</title>
   </head>
-  <body class="container-fluid">
+  <body class="container-fluid font-seri">
     <!-- aquí empieza mi barra de navegación---------------------------------------------------------------------------------------------->
     <div class="nav row">
       <nav class="navbar navbar-light bg-light row col-12">
         <div class="col-md-10 col-sm-12 d-flex">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand fs-3 m-0" href="index.html">
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <h4>Instagram</h4>
+          <p class="fs-2 fw-bold">Instagram</p>
         </div>
-<!-- ---------------Aquí se abre el promt------------------------------------------------------------------------------------------------------- -->
+        <!-- ---------------Aquí se abre el promt------------------------------------------------------------------------------------------------------- -->
         <div class="col-md-2 col-sm-12 d-flex">
           <div>
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Create a new post
-</button>
-</div>
-<div class="dropdown ms-2">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="fa-solid fa-gear"></i>
-  </button>
-  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">Profile</a></li>
-    <li><a class="dropdown-item" href="#">Accesibility</a></li>
-    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" style="color: red;" href="#">Log Out</a></li>
-  </ul>
-</div>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Create a new post
+            </button>
+          </div>
+          <div class="dropdown ms-2">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" style="color: red" href="#">Log Out</a>
+              </li>
+            </ul>
+          </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-start">
-        <p><strong>Caption:</strong></p>
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-          <label for="floatingTextarea">Add the caption of your post here</label>
-        </div>
-        <div class="my-3">
-          
-          <a class="py-1 px-2 bg-light border border-secondary-subtle rounded" href="index.html "><i class="text-dark fa-solid fa-camera bg-light"></i></a>
-          <a class="py-1 px-2 bg-light border border-secondary-subtle rounded" href="index.html"><i class="text-dark fa-solid fa-location-dot bg-light"></i></a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Publish</button>
-      </div>
-    </div>
-  </div>
-</div>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Create a new post
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body text-start">
+                  <p><strong>Caption:</strong></p>
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea"
+                    ></textarea>
+                    <label for="floatingTextarea"
+                      >Add the caption of your post here</label
+                    >
+                  </div>
+                  <div class="my-3">
+                    <a
+                      class="py-1 px-2 bg-light border border-secondary-subtle rounded"
+                      href="index.html "
+                      ><i class="text-dark fa-solid fa-camera bg-light"></i
+                    ></a>
+                    <a
+                      class="py-1 px-2 bg-light border border-secondary-subtle rounded"
+                      href="index.html"
+                      ><i
+                        class="text-dark fa-solid fa-location-dot bg-light"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
 
     <!-- -------------------------------------------------------Aquí empiezo el contenido--------------------------------------------------------------------- -->
-   
-   
-    <ul class="nav nav-tabs border-0 mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+
+    <ul
+      class="nav nav-tabs border-0 mb-3 d-flex justify-content-center"
+      id="pills-tab"
+      role="tablist"
+    >
       <li class="nav-item" role="presentation">
-        <button class="nav-link border-0 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        <button
+          class="nav-link border-0 active"
+          id="pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-home"
+          type="button"
+          role="tab"
+          aria-controls="pills-home"
+          aria-selected="true"
+        >
+          <i class="fa-solid fa-table-cells"></i>
+        </button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link border-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        <button
+          class="nav-link border-0"
+          id="pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+        >
+          <i class="fa-solid fa-square"></i>
+        </button>
       </li>
     </ul>
 
     <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active mx-auto p-2" cont" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+      <div
+        class="tab-pane fade show active mx-auto p-2 w-75"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+        tabindex="0"
+      >
         <!-- ---------------------------------------------PRIMERA CARD---------------------------------------------------------------------------------------------- -->
-        <div class="card" >
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+        <div class="card my-3">
+          <div class="card-body row fw-bold">
+            <h5 class="card-title col-md-11">Card title</h5>
+            <p class="col-1">08/26</p>
           </div>
-          <img src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg" class="card-img-top" alt="...">
+          <img
+            src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg"
+            class="card-img-top"
+            alt="perrito"
+          />
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="fw-bold my-0">204 likes</p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
           </div>
         </div>
- <!-- ---------------------------------------------SEGUNDA CARD---------------------------------------------------------------------------------------------- -->
- <div class="card" >
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-  </div>
-  <img src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<!-- ---------------------------------------------TERCER CARD---------------------------------------------------------------------------------------------- -->
-<div class="card" >
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-  </div>
-  <img src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
+        <!-- ---------------------------------------------SEGUNDA CARD---------------------------------------------------------------------------------------------- -->
+        <div class="card my-3">
+          <div class="card-body row fw-bold">
+            <h5 class="card-title col-md-11">Card title</h5>
+            <p class="col-1">08/26</p>
+          </div>
+          <img
+            src="https://cdn.pixabay.com/photo/2023/07/19/12/16/car-8136751_1280.jpg"
+            class="card-img-top"
+            alt="auto"
+          />
+          <div class="card-body">
+            <p class="fw-bold my-0">204 likes</p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <!-- ---------------------------------------------TERCER CARD---------------------------------------------------------------------------------------------- -->
+        <div class="card my-3">
+          <div class="card-body row fw-bold">
+            <h5 class="card-title col-md-11">Card title</h5>
+            <p class="col-1">08/26</p>
+          </div>
+          <img
+            src="https://media.istockphoto.com/id/1756133188/photo/view-of-fishermen-fishing-on-river-in-thung-mountain-in-tra-linh-cao-bang-province-vietnam.jpg?s=2048x2048&w=is&k=20&c=giRxskjPoGb2mhCrD7zRA8vFJOOzrdKQS6KFy7hrkCg="
+            class="card-img-top"
+            alt="paisaje"
+          />
+          <div class="card-body">
+            <p class="fw-bold my-0">204 likes</p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
 
-<!-- --------------------------------------------------------AQUÍ VIENE EL COLLAGE------------------------------------------------------- -->
+        <!-- --------------------------------------------------------AQUÍ VIENE EL COLLAGE------------------------------------------------------- -->
       </div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-        <div class="row" >
-          <div class="col-md-4">
-          <img src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg" class="card-img-top" alt="...">
+      <div
+        class="tab-pane fade"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+        tabindex="0"
+      >
+        <div class="row">
+          <div class="col-md-4 my-2">
+            <img
+              src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg"
+              class="card-img-top"
+              alt="perrito"
+            />
           </div>
-          <div class="col-md-4">
-          <img src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg" class="card-img-top" alt="...">
+          <div class="col-md-4 my-2">
+            <img
+              src="https://cdn.pixabay.com/photo/2023/09/25/10/46/water-8274680_960_720.jpg"
+              class="card-img-top"
+              alt="paisaje"
+            />
           </div>
-          <div class="col-md-4">
-          <img src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg" class="card-img-top" alt="...">
+          <div class="col-md-4 my-2">
+            <img
+              src="https://media.istockphoto.com/id/913017734/photo/having-such-fun-today.jpg?s=2048x2048&w=is&k=20&c=yAGXKe9EWsB2eeyIlkh-zY4VjTKf-4lYpuC0d-MIsvc="
+              class="card-img-top"
+              alt="padre e hijo"
+            />
           </div>
-          <div class="col-md-4">
-          <img src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg" class="card-img-top" alt="...">
+          <div class="col-md-4 my-2">
+            <img
+              src="https://media.istockphoto.com/id/486755202/photo/torrent.jpg?s=2048x2048&w=is&k=20&c=jeDWCB4hhepnA7-N3uYQ_lwEJTTrN8NDtdR18WY4Wes="
+              class="card-img-top"
+              alt="rio"
+            />
           </div>
-          <div class="col-md-4">
-          <img src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg" class="card-img-top" alt="...">
+          <div class="col-md-4 my-2">
+            <img
+              src="https://cdn.pixabay.com/photo/2023/10/12/07/34/mountain-8310076_1280.jpg"
+              class="card-img-top"
+              alt="montaña"
+            />
           </div>
-          <div class="col-md-4">
-          <img src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg" class="card-img-top" alt="...">
+          <div class="col-md-4 my-2">
+            <img
+              src="https://cdn.pixabay.com/photo/2023/12/20/07/04/clouds-8459053_1280.jpg"
+              class="card-img-top"
+              alt="nubes"
+            />
           </div>
-          <div class="col-md-4">
-          <img src="https://cdn.pixabay.com/photo/2019/11/07/08/40/puppy-4608266_1280.jpg" class="card-img-top" alt="...">
+          <div class="col-md-4 my-2">
+            <img
+              src="https://cdn.pixabay.com/photo/2013/07/18/10/56/railroad-163518_1280.jpg"
+              class="card-img-top"
+              alt="vias"
+            />
+          </div>
+          <div class="col-md-4 my-2">
+            <img
+              src="https://cdn.pixabay.com/photo/2012/08/06/00/53/bridge-53769_960_720.jpg"
+              class="card-img-top"
+              alt="puente"
+            />
+          </div>
+          <div class="col-md-4 my-2">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/11/14/23/03/sunset-3816247_960_720.jpg"
+              class="card-img-top"
+              alt="mar"
+            />
           </div>
         </div>
       </div>
-      
     </div>
-<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
-
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
   </body>
 </html>
